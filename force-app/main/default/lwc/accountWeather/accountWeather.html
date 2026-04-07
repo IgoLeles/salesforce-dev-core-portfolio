@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Weather">
+        <div class="slds-p-around_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading weather"></lightning-spinner>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">{error}</p>
+            </template>
+
+            <template if:true={weather}>
+                <div class="weather-container">
+                    <p><strong>City:</strong> {weather.city}</p>
+                    <p>Description {weather.description}</p>
+                    <p>Temperature {weather.temperature}</p>
+
+                    <template if:true={iconUrl}>
+                        <img src={iconUrl} alt="Weather icon" />
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
