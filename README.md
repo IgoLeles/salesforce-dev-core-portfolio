@@ -17,6 +17,14 @@ Repositório público com entregas práticas do programa **Salesforce Developer 
 - `force-app/main/default/lwc`
 - `force-app/main/default/objects`
 
+## Para deploy e tests (exemplos):
+
+- `sf org login web -o <alias>`
+- `sf project deploy start --source-dir force-app --target-org <alias>`
+- `sf apex run test --test-level RunLocalTests --target-org <alias>`
+- `npm ci`
+- ` npm run test:unit`
+
 ## Links
 
 - Meu LinkedIn: https://www.linkedin.com/in/igoquaresma/

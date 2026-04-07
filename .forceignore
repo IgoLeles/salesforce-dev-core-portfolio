@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Salesforce local-only / scratch org
+.sfdx/
+.localdevserver/
+
+# Jest coverage
+coverage/

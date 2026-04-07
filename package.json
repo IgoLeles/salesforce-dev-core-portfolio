@@ -1,0 +1,14 @@
+{
+  "name": "salesforce-dev-core-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Salesforce DX portfolio (Apex, Triggers, LWC, Jest)",
+  "scripts": {
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage"
+  },
+  "devDependencies": {
+    "@salesforce/sfdx-lwc-jest": "^7.0.0"
+  }
+}
